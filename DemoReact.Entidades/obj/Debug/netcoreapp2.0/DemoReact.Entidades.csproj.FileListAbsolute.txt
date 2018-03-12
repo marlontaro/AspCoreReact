@@ -1,0 +1,9 @@
+C:\Proyectos\Demos\CSharp\SolReact\DemoReact.Entidades\bin\Debug\netcoreapp2.0\DemoReact.Entidades.deps.json
+C:\Proyectos\Demos\CSharp\SolReact\DemoReact.Entidades\bin\Debug\netcoreapp2.0\DemoReact.Entidades.dll
+C:\Proyectos\Demos\CSharp\SolReact\DemoReact.Entidades\bin\Debug\netcoreapp2.0\DemoReact.Entidades.pdb
+C:\Proyectos\Demos\CSharp\SolReact\DemoReact.Entidades\obj\Debug\netcoreapp2.0\DemoReact.Entidades.csprojResolveAssemblyReference.cache
+C:\Proyectos\Demos\CSharp\SolReact\DemoReact.Entidades\obj\Debug\netcoreapp2.0\DemoReact.Entidades.csproj.CoreCompileInputs.cache
+C:\Proyectos\Demos\CSharp\SolReact\DemoReact.Entidades\obj\Debug\netcoreapp2.0\DemoReact.Entidades.AssemblyInfoInputs.cache
+C:\Proyectos\Demos\CSharp\SolReact\DemoReact.Entidades\obj\Debug\netcoreapp2.0\DemoReact.Entidades.AssemblyInfo.cs
+C:\Proyectos\Demos\CSharp\SolReact\DemoReact.Entidades\obj\Debug\netcoreapp2.0\DemoReact.Entidades.dll
+C:\Proyectos\Demos\CSharp\SolReact\DemoReact.Entidades\obj\Debug\netcoreapp2.0\DemoReact.Entidades.pdb

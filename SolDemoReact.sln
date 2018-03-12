@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. WebSite", "1. WebSite", "{A9076099-F403-4479-8BDF-ABA917C52F71}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. DAO", "3. DAO", "{4F4C57E1-2F29-4FCE-B19E-B99629C0D094}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Entidad", "4. Entidad", "{BC19D081-11C7-4FF3-98E0-2FD6BD1C0C73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoReact.Entidad", "DemoReact.Entidades\DemoReact.Entidad.csproj", "{6B124DA4-D74F-4B76-B0F8-61105435AA0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoReact.DAO", "DemoReact.DAO\DemoReact.DAO.csproj", "{733187B6-D174-4D38-A794-02155B212844}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoReact.WebSite", "DemoReact.WebSite\DemoReact.WebSite.csproj", "{97135E35-7E67-4EDC-904A-B2E5F02DF374}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Servicio", "2. Servicio", "{68E73873-1F90-4EED-8629-1AD52C1C8DF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoReact.Servicio", "DemoReact.Servicio\DemoReact.Servicio.csproj", "{B8F1142C-5503-4756-A547-A298FAB0616B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B124DA4-D74F-4B76-B0F8-61105435AA0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B124DA4-D74F-4B76-B0F8-61105435AA0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B124DA4-D74F-4B76-B0F8-61105435AA0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B124DA4-D74F-4B76-B0F8-61105435AA0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{733187B6-D174-4D38-A794-02155B212844}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{733187B6-D174-4D38-A794-02155B212844}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{733187B6-D174-4D38-A794-02155B212844}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{733187B6-D174-4D38-A794-02155B212844}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97135E35-7E67-4EDC-904A-B2E5F02DF374}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97135E35-7E67-4EDC-904A-B2E5F02DF374}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97135E35-7E67-4EDC-904A-B2E5F02DF374}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97135E35-7E67-4EDC-904A-B2E5F02DF374}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8F1142C-5503-4756-A547-A298FAB0616B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8F1142C-5503-4756-A547-A298FAB0616B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8F1142C-5503-4756-A547-A298FAB0616B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8F1142C-5503-4756-A547-A298FAB0616B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6B124DA4-D74F-4B76-B0F8-61105435AA0C} = {BC19D081-11C7-4FF3-98E0-2FD6BD1C0C73}
+		{733187B6-D174-4D38-A794-02155B212844} = {4F4C57E1-2F29-4FCE-B19E-B99629C0D094}
+		{97135E35-7E67-4EDC-904A-B2E5F02DF374} = {A9076099-F403-4479-8BDF-ABA917C52F71}
+		{B8F1142C-5503-4756-A547-A298FAB0616B} = {68E73873-1F90-4EED-8629-1AD52C1C8DF0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F59384B3-58E0-46C1-A2AE-71469D3A3F65}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DemoReact.DAO\DemoReact.DAO.csproj" />
+    <ProjectReference Include="..\DemoReact.Entidades\DemoReact.Entidad.csproj" />
+  </ItemGroup>
+
+</Project>
