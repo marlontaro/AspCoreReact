@@ -26,6 +26,8 @@
     <None Remove="ClientApp\components\ClienteCrear.tsx" />
     <None Remove="ClientApp\components\message\InlineError.tsx" />
     <None Remove="ClientApp\components\message\InlineOk.tsx" />
+    <None Remove="ClientApp\components\ModalJQuery.tsx" />
+    <None Remove="ClientApp\components\ModalReact.tsx" />
   </ItemGroup>
 
   <ItemGroup>
@@ -38,6 +40,8 @@
     <TypeScriptCompile Include="ClientApp\components\ClienteCrear.tsx" />
     <TypeScriptCompile Include="ClientApp\components\message\InlineError.tsx" />
     <TypeScriptCompile Include="ClientApp\components\message\InlineOk.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\ModalJQuery.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\ModalReact.tsx" />
   </ItemGroup>
 
   <ItemGroup>

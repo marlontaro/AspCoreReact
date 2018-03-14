@@ -10,6 +10,7 @@
     "skipDefaultLibCheck": true,
     "strict": true,
     "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true,
     "types": [ "webpack-env" ]
   },
   "exclude": [

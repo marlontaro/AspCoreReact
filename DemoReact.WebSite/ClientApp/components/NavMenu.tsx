@@ -18,6 +18,19 @@ export class NavMenu extends React.Component<{}, {}> {
                     </NavLink>
                 </li>
 
+                <li className="nav-item">
+                    <NavLink to={'/modal1'} className='nav-link' activeClassName='active'>
+                        Modal JQuery
+                    </NavLink>
+                </li>
+                
+                <li className="nav-item">
+                    <NavLink to={'/modal2'} className='nav-link' activeClassName='active'>
+                        Modal React
+                    </NavLink>
+                </li>
+
+
                 <li className="nav-item">                   
                     <NavLink to={'/counter'} className='nav-link' activeClassName='active'>
                          Counter

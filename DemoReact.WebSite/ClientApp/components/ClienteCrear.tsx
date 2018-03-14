@@ -1,11 +1,13 @@
 ﻿import * as React from 'react';
 import { RouteComponentProps } from 'react-router';
 import { Link, NavLink } from 'react-router-dom';
-
+import * as ReactDOM from 'react-dom';
 import 'isomorphic-fetch';
 import axios from 'axios';
 import InlineOk from "./message/InlineOk";
-import InlineError from "./message/InlineError"; 
+import InlineError from "./message/InlineError";
+import $ from 'jquery';
+
 
 interface ClienteState {
     id: number;
@@ -14,18 +16,28 @@ interface ClienteState {
     loading: boolean;
     titulo: string;
     mensajeOk: string;
-    mensajeError: string;
+    mensajeError: string; 
+    
 }
 
 export class ClienteCrear extends React.Component<RouteComponentProps<{}>, ClienteState> {
-
+    
     constructor(props) {
         super(props);
-        this.state = { id: 0, nombre: '', apellido: '', loading: false, titulo: 'Crear', mensajeError: '', mensajeOk:'' };
-        this.handleInputChange = this.handleInputChange.bind(this);       
-    }
+        this.state = {
+            id: 0, nombre: '', apellido: '',
+            loading: false,
+            titulo: 'Crear',
+            mensajeError: '',
+            mensajeOk: '',
+        };
+     
+        this.handleInputChange = this.handleInputChange.bind(this);   
+    }       
 
     componentWillMount() {
+      
+
         if (this.props.match.params["id"] !== undefined) {
             var id = this.props.match.params["id"];
 
@@ -54,10 +66,8 @@ export class ClienteCrear extends React.Component<RouteComponentProps<{}>, Clien
             [name]: value
         });
     }
-
-
-    onClick = (e) => {
-        var self = this;
+    
+    onClick = (e) => {     
 
         if (this.state.id === 0) {
 
@@ -81,6 +91,8 @@ export class ClienteCrear extends React.Component<RouteComponentProps<{}>, Clien
                         mensajeOk: ""
                     });
                 }           
+
+                $("#nombre").focus();
 
             }).catch(error => {
                 if (error.response.data.status === "error") {
@@ -124,6 +136,9 @@ export class ClienteCrear extends React.Component<RouteComponentProps<{}>, Clien
         }
     }
 
+    
+
+
     public render() {
 
         return <div>
@@ -131,7 +146,6 @@ export class ClienteCrear extends React.Component<RouteComponentProps<{}>, Clien
             <hr />
 
             <form>
-
                 {this.state.mensajeOk && <InlineOk text={this.state.mensajeOk} />}
                 {this.state.mensajeError && <InlineError text={this.state.mensajeError} />}
 
@@ -139,7 +153,7 @@ export class ClienteCrear extends React.Component<RouteComponentProps<{}>, Clien
                 <div className="form-group row">
                     <label className="col-sm-2 col-form-label">Código:</label>
                     <div className="col-sm-10">
-                       <input label="Código" type="text" className="form-control" name="codigo" value={this.state.id} readOnly={true} />
+                       <input label="Código" type="text" className="form-control"  name="codigo" value={this.state.id} readOnly={true} />
                     </div>
                 </div> 
                     : null}
@@ -147,14 +161,14 @@ export class ClienteCrear extends React.Component<RouteComponentProps<{}>, Clien
                 <div className="form-group row">
                     <label  className="col-sm-2 col-form-label">Nombre:</label>
                     <div className="col-sm-10">
-                        <input type="text" className="form-control" id="nombre" name="nombre" value={this.state.nombre} onChange={this.handleInputChange} />
+                        <input type="text" className="form-control" id="nombre" name="nombre" autoFocus value={this.state.nombre} onChange={this.handleInputChange} />
                     </div>
                 </div> 
 
                 <div className="form-group row">
                     <label className="col-sm-2 col-form-label">Apellido:</label>
                     <div className="col-sm-10">
-                        <input type="text" className="form-control" id="apellido" name="apellido" value={this.state.apellido} onChange={this.handleInputChange} />
+                        <input type="text" className="form-control" id="apellido"   name="apellido" value={this.state.apellido} onChange={this.handleInputChange} />
                     </div>
                 </div> 
 
@@ -164,10 +178,9 @@ export class ClienteCrear extends React.Component<RouteComponentProps<{}>, Clien
                         {" "}
                         <Link to={`/clientes`} className="btn btn-light">
                           Volver
-                    </Link>
-                    </div>
+                        </Link>
+                   </div>
                 </div>
-
             </form>
             </div>;
     }
