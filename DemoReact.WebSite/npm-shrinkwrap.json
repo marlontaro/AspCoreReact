@@ -3484,7 +3484,7 @@
     "moment": {
       "version": "2.22.1",
       "resolved": "https://registry.npmjs.org/moment/-/moment-2.22.1.tgz",
-      "integrity": "sha512-shJkRTSebXvsVqk56I+lkb2latjBs8I+pc2TzWc545y2iFnSjm7Wg0QMh+ZWcdSLQyGEau5jI8ocnmkyTgr9YQ==",
+      "integrity": "sha1-Upoum/lz8lnJZD0jf9qE3jom6K0=",
       "dev": true
     },
     "ms": {
@@ -4598,7 +4598,7 @@
     "react-datepicker": {
       "version": "1.4.1",
       "resolved": "https://registry.npmjs.org/react-datepicker/-/react-datepicker-1.4.1.tgz",
-      "integrity": "sha512-O/ExTWLS81pyWJWLFg1BRQEr9S/BDd6iMEkGctxQmVrRw2srW8DNdnQm5UgFNu8LoSZGMDvI55OghYZvDpWJhw==",
+      "integrity": "sha1-7hcbcdmFPlb57s5fwxhkAvRkhoM=",
       "dev": true,
       "requires": {
         "classnames": "2.2.5",
@@ -4664,7 +4664,7 @@
     "react-onclickoutside": {
       "version": "6.7.1",
       "resolved": "https://registry.npmjs.org/react-onclickoutside/-/react-onclickoutside-6.7.1.tgz",
-      "integrity": "sha512-p84kBqGaMoa7VYT0vZ/aOYRfJB+gw34yjpda1Z5KeLflg70HipZOT+MXQenEhdkPAABuE2Astq4zEPdMqUQxcg==",
+      "integrity": "sha1-altbi06ua3diWXEsiciis2sXvpM=",
       "dev": true
     },
     "react-popper": {
