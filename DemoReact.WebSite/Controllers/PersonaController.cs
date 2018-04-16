@@ -9,6 +9,11 @@ using DemoReact.WebSite.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.PixelFormats;
+using SixLabors.ImageSharp.Processing;
+using SixLabors.ImageSharp.Processing.Filters;
+using SixLabors.ImageSharp.Processing.Transforms;
 
 namespace DemoReact.WebSite.Controllers
 {
@@ -63,7 +68,7 @@ namespace DemoReact.WebSite.Controllers
             string imagen = "";
             string imagenMiniatura = "";
             bool actualiza = false;
-
+           
             if (input.imagen != null)
             {
                 if (input.imagen.Length != 0)
@@ -76,16 +81,31 @@ namespace DemoReact.WebSite.Controllers
                         fechaActual.Hour, fechaActual.Minute, fechaActual.Second,
                         input.imagen.FileName);
 
-                    var filePath = Path.Combine(environment.ContentRootPath, @"uploads/imagen/original", imagen);
+                    var rutaImagenOriginal =  Path.Combine(environment.ContentRootPath, @"uploads/imagen/original", imagen);
                     url = HttpContext.Request.Host.Value;
 
-                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    using (var stream = new FileStream(rutaImagenOriginal, FileMode.Create))
                     {
                         await input.imagen.CopyToAsync(stream);
                     }
                     actualiza = true;
+
+                    //guardar  miniatura                 
+                    imagenMiniatura= String.Format("{0}{1}{2}{3}{4}{5}-m{6}"
+                        , fechaActual.Year, fechaActual.Month, fechaActual.Day,
+                        fechaActual.Hour, fechaActual.Minute, fechaActual.Second,
+                        input.imagen.FileName);
+                    var rutaImagenMiniatura = "";
+                    rutaImagenMiniatura = Path.Combine(environment.ContentRootPath, @"uploads/imagen/miniatura", imagenMiniatura);
+                    using (Image<Rgba32> image = Image.Load(rutaImagenOriginal))
+                    {
+                        image.Mutate(x => x
+                             .Resize(image.Width / 2, image.Height / 2)
+                             .Grayscale());
+                        image.Save(rutaImagenMiniatura); // Automatic encoder selected based on extension.
+                    }
                 }
-            }
+            }            
 
             string urlImagen = "/uploads/imagen/original/original.png";
 
@@ -136,14 +156,29 @@ namespace DemoReact.WebSite.Controllers
                         fechaActual.Hour, fechaActual.Minute, fechaActual.Second,
                         input.imagen.FileName);
 
-                    var filePath = Path.Combine(environment.ContentRootPath, @"uploads/imagen/original", imagen);
+                    var rutaImagenOriginal = Path.Combine(environment.ContentRootPath, @"uploads/imagen/original", imagen);
                     url = HttpContext.Request.Host.Value;
 
-                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    using (var stream = new FileStream(rutaImagenOriginal, FileMode.Create))
                     {
                         await input.imagen.CopyToAsync(stream);
                     }
                     actualiza = true;
+
+                    //guardar  miniatura                 
+                    imagenMiniatura = String.Format("{0}{1}{2}{3}{4}{5}-m{6}"
+                        , fechaActual.Year, fechaActual.Month, fechaActual.Day,
+                        fechaActual.Hour, fechaActual.Minute, fechaActual.Second,
+                        input.imagen.FileName);
+                    var rutaImagenMiniatura = "";
+                    rutaImagenMiniatura = Path.Combine(environment.ContentRootPath, @"uploads/imagen/miniatura", imagenMiniatura);
+                    using (Image<Rgba32> image = Image.Load(rutaImagenOriginal))
+                    {
+                        image.Mutate(x => x
+                             .Resize(image.Width / 2, image.Height / 2)
+                             .Grayscale());
+                        image.Save(rutaImagenMiniatura); // Automatic encoder selected based on extension.
+                    }
                 }
             }
 

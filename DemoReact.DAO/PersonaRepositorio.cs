@@ -21,7 +21,7 @@ namespace DemoReact.DAO
         {
             get
             {
-                return new Database(connectionString, DatabaseType.SqlServer2008, SqlClientFactory.Instance);
+                return new Database(connectionString, DatabaseType.SqlServer2012, SqlClientFactory.Instance);
             }
         }
 
