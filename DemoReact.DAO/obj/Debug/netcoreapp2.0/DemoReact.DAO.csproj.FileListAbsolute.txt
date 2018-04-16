@@ -9,3 +9,14 @@ C:\Proyectos\Demos\CSharp\SolReact\DemoReact.DAO\obj\Debug\netcoreapp2.0\DemoRea
 C:\Proyectos\Demos\CSharp\SolReact\DemoReact.DAO\obj\Debug\netcoreapp2.0\DemoReact.DAO.AssemblyInfo.cs
 C:\Proyectos\Demos\CSharp\SolReact\DemoReact.DAO\obj\Debug\netcoreapp2.0\DemoReact.DAO.dll
 C:\Proyectos\Demos\CSharp\SolReact\DemoReact.DAO\obj\Debug\netcoreapp2.0\DemoReact.DAO.pdb
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.DAO\bin\Debug\netcoreapp2.0\DemoReact.DAO.deps.json
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.DAO\bin\Debug\netcoreapp2.0\DemoReact.DAO.dll
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.DAO\bin\Debug\netcoreapp2.0\DemoReact.DAO.pdb
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.DAO\bin\Debug\netcoreapp2.0\DemoReact.Entidad.dll
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.DAO\bin\Debug\netcoreapp2.0\DemoReact.Entidad.pdb
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.DAO\obj\Debug\netcoreapp2.0\DemoReact.DAO.csprojResolveAssemblyReference.cache
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.DAO\obj\Debug\netcoreapp2.0\DemoReact.DAO.csproj.CoreCompileInputs.cache
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.DAO\obj\Debug\netcoreapp2.0\DemoReact.DAO.AssemblyInfoInputs.cache
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.DAO\obj\Debug\netcoreapp2.0\DemoReact.DAO.AssemblyInfo.cs
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.DAO\obj\Debug\netcoreapp2.0\DemoReact.DAO.dll
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.DAO\obj\Debug\netcoreapp2.0\DemoReact.DAO.pdb

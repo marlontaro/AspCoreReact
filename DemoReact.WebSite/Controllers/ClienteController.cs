@@ -6,7 +6,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using DemoReact.Entidad.Api;
-using DemoReact.Entidades;
+using DemoReact.Entidad;
 using DemoReact.Servicio;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -43,7 +43,7 @@ namespace DemoReact.WebSite.Controllers
         }
 
         // GET: api/Cliente/5
-        [HttpGet("{id}", Name = "Get")]
+        [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
             ClienteIndOutput data = new ClienteIndOutput();

@@ -31,7 +31,15 @@ export class Cliente extends React.Component<RouteComponentProps<{}>, ClienteSta
                     loading: false
                 })
             }).catch((error) => {
-                console.log("error", error)
+                if (error.response.status === 404) {
+
+                    this.setState({
+                        mensajeCarga: error.response.data.message,
+                        mensajeOk: '',
+                        mensajeError:''
+                    });
+                }
+                
             });
 
     }

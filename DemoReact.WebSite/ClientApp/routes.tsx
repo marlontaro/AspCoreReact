@@ -6,6 +6,9 @@ import { FetchData } from './components/FetchData';
 import { Counter } from './components/Counter';
 import { Cliente } from './components/Cliente';
 import { ClienteCrear } from './components/ClienteCrear';
+import { Persona } from './components/Persona';
+import { PersonaCrear } from './components/PersonaCrear';
+
 import { ModalJQuery } from './components/ModalJQuery';
 import { ModalReact } from './components/ModalReact';
 
@@ -19,5 +22,9 @@ export const routes = <Layout>
     <Route exact path='/clientes' component={Cliente} />
     <Route exact path='/clientes/crear' component={ClienteCrear} />
     <Route exact path='/clientes/editar/:id' component={ClienteCrear} />
-   
+
+    <Route exact path='/personas' component={Persona} />
+    <Route exact path='/personas/crear' component={PersonaCrear} />
+    <Route exact path='/personas/editar/:id' component={PersonaCrear} />
+
 </Layout>;

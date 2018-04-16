@@ -28,6 +28,8 @@
     <None Remove="ClientApp\components\message\InlineOk.tsx" />
     <None Remove="ClientApp\components\ModalJQuery.tsx" />
     <None Remove="ClientApp\components\ModalReact.tsx" />
+    <None Remove="ClientApp\components\Persona.tsx" />
+    <None Remove="ClientApp\components\PersonaCrear.tsx" />
   </ItemGroup>
 
   <ItemGroup>
@@ -42,6 +44,8 @@
     <TypeScriptCompile Include="ClientApp\components\message\InlineOk.tsx" />
     <TypeScriptCompile Include="ClientApp\components\ModalJQuery.tsx" />
     <TypeScriptCompile Include="ClientApp\components\ModalReact.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\Persona.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\PersonaCrear.tsx" />
   </ItemGroup>
 
   <ItemGroup>

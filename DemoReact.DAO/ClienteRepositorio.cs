@@ -1,5 +1,5 @@
 ﻿using DemoReact.Entidad.Api;
-using DemoReact.Entidades;
+using DemoReact.Entidad;
 using NPoco;
 using System;
 using System.Collections.Generic;
@@ -14,7 +14,7 @@ namespace DemoReact.DAO
         private string connectionString;
         public ClienteRepositorio()
         {
-            connectionString = @"Data Source=SQL5033.site4now.net;Initial Catalog=DB_A0969B_demoreact;User Id=DB_A0969B_demoreact_admin;Password=Arenales1;";
+            connectionString = @"Data Source=SQL5033.site4now.net;Initial Catalog=DB_A0969B_demoreact;User Id=DB_A0969B_demoreact_admin;Password=Arenales1;Min Pool Size = 10; Max Pool Size = 100";
         }
 
         public IDatabase Connection

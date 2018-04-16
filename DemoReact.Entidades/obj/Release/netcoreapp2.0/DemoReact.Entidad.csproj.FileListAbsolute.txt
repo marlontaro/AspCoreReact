@@ -7,3 +7,12 @@ C:\Proyectos\Demos\CSharp\SolReact\DemoReact.Entidades\obj\Release\netcoreapp2.0
 C:\Proyectos\Demos\CSharp\SolReact\DemoReact.Entidades\obj\Release\netcoreapp2.0\DemoReact.Entidad.AssemblyInfo.cs
 C:\Proyectos\Demos\CSharp\SolReact\DemoReact.Entidades\obj\Release\netcoreapp2.0\DemoReact.Entidad.dll
 C:\Proyectos\Demos\CSharp\SolReact\DemoReact.Entidades\obj\Release\netcoreapp2.0\DemoReact.Entidad.pdb
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.Entidades\bin\Release\netcoreapp2.0\DemoReact.Entidad.deps.json
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.Entidades\bin\Release\netcoreapp2.0\DemoReact.Entidad.dll
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.Entidades\bin\Release\netcoreapp2.0\DemoReact.Entidad.pdb
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.Entidades\obj\Release\netcoreapp2.0\DemoReact.Entidad.csprojResolveAssemblyReference.cache
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.Entidades\obj\Release\netcoreapp2.0\DemoReact.Entidad.csproj.CoreCompileInputs.cache
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.Entidades\obj\Release\netcoreapp2.0\DemoReact.Entidad.AssemblyInfoInputs.cache
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.Entidades\obj\Release\netcoreapp2.0\DemoReact.Entidad.AssemblyInfo.cs
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.Entidades\obj\Release\netcoreapp2.0\DemoReact.Entidad.dll
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.Entidades\obj\Release\netcoreapp2.0\DemoReact.Entidad.pdb

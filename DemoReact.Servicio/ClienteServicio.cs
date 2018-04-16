@@ -1,6 +1,6 @@
 ﻿using DemoReact.DAO;
 using DemoReact.Entidad.Api;
-using DemoReact.Entidades;
+using DemoReact.Entidad;
 using System;
 using System.Collections.Generic;
 

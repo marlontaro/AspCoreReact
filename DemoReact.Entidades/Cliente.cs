@@ -1,7 +1,7 @@
 ﻿using NPoco;
 using System;
 
-namespace DemoReact.Entidades
+namespace DemoReact.Entidad
 {
     [TableName("Cliente")]
     [PrimaryKey("IdCliente")]

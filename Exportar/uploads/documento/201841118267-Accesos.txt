@@ -1,0 +1,13 @@
+﻿Aplicación URL： http://ryuktaro-001-site3.itempurl.com
+WordPress:  http://ryuktaro-001-site3.itempurl.com/wp-login.php
+ID de Inicio de Administrador admin
+Contraseña de Administrador adminadmin
+
+
+WordPress: www.RadioGozo.net/wp-admin  
+----  usuario: rgozonet 
+---- contraseña: SQ^EasuQ^UAx7M*sjG(SMDsA
+
+Panel de Control: www.radiogozo.net/cpanel   
+--- usuario: rgnet  
+--- contraseña: rg%es%dl%f%11

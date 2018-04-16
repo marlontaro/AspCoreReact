@@ -11,3 +11,16 @@ C:\Proyectos\Demos\CSharp\SolReact\DemoReact.Servicio\obj\Release\netcoreapp2.0\
 C:\Proyectos\Demos\CSharp\SolReact\DemoReact.Servicio\obj\Release\netcoreapp2.0\DemoReact.Servicio.AssemblyInfo.cs
 C:\Proyectos\Demos\CSharp\SolReact\DemoReact.Servicio\obj\Release\netcoreapp2.0\DemoReact.Servicio.dll
 C:\Proyectos\Demos\CSharp\SolReact\DemoReact.Servicio\obj\Release\netcoreapp2.0\DemoReact.Servicio.pdb
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.Servicio\bin\Release\netcoreapp2.0\DemoReact.Servicio.deps.json
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.Servicio\bin\Release\netcoreapp2.0\DemoReact.Servicio.dll
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.Servicio\bin\Release\netcoreapp2.0\DemoReact.Servicio.pdb
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.Servicio\bin\Release\netcoreapp2.0\DemoReact.DAO.dll
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.Servicio\bin\Release\netcoreapp2.0\DemoReact.Entidad.dll
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.Servicio\bin\Release\netcoreapp2.0\DemoReact.DAO.pdb
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.Servicio\bin\Release\netcoreapp2.0\DemoReact.Entidad.pdb
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.Servicio\obj\Release\netcoreapp2.0\DemoReact.Servicio.csprojResolveAssemblyReference.cache
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.Servicio\obj\Release\netcoreapp2.0\DemoReact.Servicio.csproj.CoreCompileInputs.cache
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.Servicio\obj\Release\netcoreapp2.0\DemoReact.Servicio.AssemblyInfoInputs.cache
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.Servicio\obj\Release\netcoreapp2.0\DemoReact.Servicio.AssemblyInfo.cs
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.Servicio\obj\Release\netcoreapp2.0\DemoReact.Servicio.dll
+C:\Proyectos\Demos\CSharp\AspCoreReact\DemoReact.Servicio\obj\Release\netcoreapp2.0\DemoReact.Servicio.pdb

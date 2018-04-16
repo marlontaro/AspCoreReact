@@ -4719,11 +4719,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Proyectos\\Demos\\CSharp\\SolReact\\DemoReact.Entidades\\DemoReact.Entidad.csproj",
+      "projectUniqueName": "C:\\Proyectos\\Demos\\CSharp\\AspCoreReact\\DemoReact.Entidades\\DemoReact.Entidad.csproj",
       "projectName": "DemoReact.Entidad",
-      "projectPath": "C:\\Proyectos\\Demos\\CSharp\\SolReact\\DemoReact.Entidades\\DemoReact.Entidad.csproj",
+      "projectPath": "C:\\Proyectos\\Demos\\CSharp\\AspCoreReact\\DemoReact.Entidades\\DemoReact.Entidad.csproj",
       "packagesPath": "C:\\Users\\Marlon Cordova\\.nuget\\packages\\",
-      "outputPath": "C:\\Proyectos\\Demos\\CSharp\\SolReact\\DemoReact.Entidades\\obj\\",
+      "outputPath": "C:\\Proyectos\\Demos\\CSharp\\AspCoreReact\\DemoReact.Entidades\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
