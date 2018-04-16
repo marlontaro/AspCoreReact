@@ -116,6 +116,7 @@ namespace DemoReact.WebSite.Controllers
             PersonaInput personaInput = new PersonaInput();
             personaInput.id = 0;
             personaInput.nombre = input.nombre;
+            personaInput.fecha = input.fecha;
             personaInput.imagenOriginal = imagenOriginal;
             personaInput.imagen = imagen;
             personaInput.imagenMiniatura = imagenMiniatura;
@@ -196,6 +197,7 @@ namespace DemoReact.WebSite.Controllers
             personaInput.nombre = input.nombre;
             personaInput.imagenOriginal = imagenOriginal;
             personaInput.imagen = imagen;
+            personaInput.fecha = input.fecha;
             personaInput.imagenMiniatura = imagenMiniatura;
             personaInput.validaImagen = actualiza;
          

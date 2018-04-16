@@ -21,7 +21,7 @@ namespace DemoReact.DAO
         {
             get
             {
-                return new Database(connectionString, DatabaseType.SqlServer2012, SqlClientFactory.Instance);
+                return new Database(connectionString, DatabaseType.SqlServer2008, SqlClientFactory.Instance);
             }
         }
 
@@ -29,18 +29,47 @@ namespace DemoReact.DAO
 
         public IList<ClienteQuery> GetAll()
         {
+            IList<ClienteQuery> lista = new List<ClienteQuery>();
             using (IDatabase db = Connection)
-            {                
-                return db.Fetch<ClienteQuery>("SELECT IdCliente as id, Nombre as nombre, Apellido as apellido FROM Cliente where eliminado = 0");
+            {
+                try
+                {
+                    lista= db.Fetch<ClienteQuery>("SELECT IdCliente as id, Nombre as nombre, Apellido as apellido FROM Cliente where eliminado = 0");               
+                }
+                catch
+                {
+
+                }
+                finally
+                {
+                    db.CloseSharedConnection();
+                }
             }
+
+            return lista;
         }
 
         public ClienteIndOutput GetByID(int id)
         {
+            ClienteIndOutput entidad = new ClienteIndOutput();
             using (IDatabase db = Connection)
             {
-                return db.SingleOrDefault<ClienteIndOutput>("SELECT IdCliente as id, Nombre as nombre, Apellido as apellido FROM Cliente where eliminado =0 and IdCliente=@0", id);
+                try
+                {
+                    entidad= db.SingleOrDefault<ClienteIndOutput>("SELECT IdCliente as id, Nombre as nombre, Apellido as apellido FROM Cliente where eliminado =0 and IdCliente=@0", id);
+                }
+                catch
+                {
+
+                }
+                finally
+                {
+                    db.CloseSharedConnection();
+                }
+                
             }
+
+            return entidad;
         }
 
         public Cliente GetSingleByID(int id)

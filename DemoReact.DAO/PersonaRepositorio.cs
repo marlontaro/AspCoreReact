@@ -21,24 +21,52 @@ namespace DemoReact.DAO
         {
             get
             {
-                return new Database(connectionString, DatabaseType.SqlServer2012, SqlClientFactory.Instance);
+                return new Database(connectionString, DatabaseType.SqlServer2008, SqlClientFactory.Instance);
             }
         }
 
         public IList<PersonaQuery> GetAll()
         {
+            IList<PersonaQuery> lista = new List<PersonaQuery>();
             using (IDatabase db = Connection)
             {
-                return db.Fetch<PersonaQuery>("SELECT IdPersona as id, Nombre as nombre,convert(varchar, fecha, 103)+ ' ' + convert(varchar, fecha, 108) as Fecha, isnull(imagenMiniatura,'') as Imagen  FROM Persona where eliminado = 0");
+                try
+                {
+
+                 lista=  db.Fetch<PersonaQuery>("SELECT IdPersona as id, Nombre as nombre,convert(varchar, fecha, 103)+ ' ' + convert(varchar, fecha, 108) as Fecha, isnull(imagenMiniatura,'') as Imagen  FROM Persona where eliminado = 0");
+            
+                }
+                catch {
+
+                }
+                finally
+                {
+                    db.CloseSharedConnection();
+                }
             }
+            return lista;
         }
 
         public PersonaIndOutput GetByID(int id)
-        {
+        { 
+            PersonaIndOutput entidad =new PersonaIndOutput();
             using (IDatabase db = Connection)
             {
-                return db.SingleOrDefault<PersonaIndOutput>("SELECT IdPersona as id, Nombre as nombre, fecha as Fecha,  isnull(imagen,'') as Imagen FROM Persona where eliminado =0 and IdPersona=@0", id);
+                try
+                {
+                    entidad= db.SingleOrDefault<PersonaIndOutput>("SELECT IdPersona as id, Nombre as nombre, fecha as Fecha,  isnull(imagen,'') as Imagen FROM Persona where eliminado =0 and IdPersona=@0", id);              
+                }
+                catch
+                {
+
+                }
+                finally
+                {
+                    db.CloseSharedConnection();
+                }              
             }
+
+            return entidad;
         }
 
         public Persona GetSingleByID(int id)

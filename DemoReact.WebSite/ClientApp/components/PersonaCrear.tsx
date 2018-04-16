@@ -7,13 +7,18 @@ import axios from 'axios';
 import InlineOk from "./message/InlineOk";
 import InlineError from "./message/InlineError";
 import $ from 'jquery';
+import * as moment from 'moment';
+import * as es from 'moment/locale/es';
+import 'react-datepicker/dist/react-datepicker.css';
+import DatePicker from 'react-datepicker';
+
 
 interface PersonaState {
     id: number;
-    nombre: string;    
+    nombre: string;  
+    fecha: any;
     imagen: Blob;
-    urlImagen: string;
-
+    urlImagen: string; 
     loading: boolean;
     titulo: string;
     mensajeOk: string;
@@ -24,6 +29,8 @@ export class PersonaCrear extends React.Component<RouteComponentProps<{}>, Perso
 
     constructor(props) {
         super(props);
+        moment.locale('es');
+
         this.state = {
             id: 0,
             nombre: '',
@@ -33,9 +40,11 @@ export class PersonaCrear extends React.Component<RouteComponentProps<{}>, Perso
             titulo: 'Crear',
             mensajeError: '',
             mensajeOk: '',
+            fecha: moment()
         };
 
         this.handleInputChange = this.handleInputChange.bind(this);
+        this.handleFechaEntrega = this.handleFechaEntrega.bind(this);
     }
 
     handleInputChange(event) {
@@ -49,21 +58,40 @@ export class PersonaCrear extends React.Component<RouteComponentProps<{}>, Perso
         });
     }
 
+    handleFechaEntrega(result) {
+
+        this.setState({
+            fecha: result
+        });
+
+    }
+
     componentWillMount() {
+
         if (this.props.match.params["id"] !== undefined) {
             var id = this.props.match.params["id"];
 
             axios.get(`api/personas/${id}`).
                 then(response => {
+                    let fecha = moment();
+                    if (response.data.fecha !== undefined) {
+                        fecha = moment(response.data.fecha,'YYYY-MM-DD');
+                    }
+                    console.log('fecha');
+                    console.log(response.data.fecha);
+                    console.log('fecha');
+                    console.log(fecha.date());
+
                     this.setState({
                         titulo: 'Editar',
                         id: response.data.id,
+                        fecha: fecha,
                         nombre: response.data.nombre,
                         urlImagen: response.data.imagen,
                         loading: false
                     });
 
-                    console.log(JSON.stringify(response.data));
+                    //console.log(JSON.stringify(response.data));
 
                 }).catch((error) => {
                     console.log("error", error)
@@ -116,11 +144,15 @@ export class PersonaCrear extends React.Component<RouteComponentProps<{}>, Perso
             id = this.state.id;
         }
 
+        let fecha = '';
+        fecha = moment(this.state.fecha).format('DD/MM/YYYY').toString();   
         console.log(url);
         console.log(metodo);
-        let data = new FormData();
+        console.log(this.state.fecha);
+        let data = new FormData();        
         data.append('id', String(this.state.id));
         data.append('nombre', this.state.nombre);
+        data.append('fecha', fecha);
         data.append('imagen', this.state.imagen);        
 
         axios({
@@ -178,6 +210,21 @@ export class PersonaCrear extends React.Component<RouteComponentProps<{}>, Perso
                             <label className="col-sm-2 col-form-label">Nombre:</label>
                             <div className="col-sm-10">
                                 <input type="text" className="form-control" id="nombre" name="nombre" autoFocus value={this.state.nombre} onChange={this.handleInputChange} />
+                            </div>
+                        </div> 
+
+                        <div className="form-group row">
+                            <label className="col-sm-2 col-form-label">Fecha:</label>
+                            <div className="col-sm-10">
+                                <DatePicker
+                                    selected={this.state.fecha ? moment(this.state.fecha, 'DD-MM-YYYY') : moment()}
+                                    todayButton={"Hoy"}
+                                    dateFormat="DD/MM/YYYY"
+                                    readOnly
+                                    onChange={this.handleFechaEntrega}
+                                    style={{ width: '100%' }}
+                                    className="date-picker-input"
+                                />        
                             </div>
                         </div> 
 

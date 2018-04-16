@@ -87,7 +87,7 @@ namespace DemoReact.Servicio
             Persona persona = new Persona();
             persona.IdPersona = 0;
             persona.Nombre = input.nombre;
-            persona.Fecha = DateTime.Now;         
+            persona.Fecha = input.fecha;         
             persona.Imagen = input.imagen;
             persona.ImagenOriginal = input.imagenOriginal;
             persona.ImagenMiniatura = input.imagenMiniatura;
@@ -111,7 +111,7 @@ namespace DemoReact.Servicio
             if (persona != null)
             {
                 persona.Nombre = input.nombre;
-
+                persona.Fecha = input.fecha;
                 if (input.validaImagen == true)
                 {
                     persona.Imagen = input.imagen;

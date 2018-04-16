@@ -10,6 +10,7 @@ namespace DemoReact.WebSite.Models
     {
         public int id { get; set; }
         public string nombre { get; set; }
+        public DateTime fecha { get; set; }
         public IFormFile imagen { get; set; }
     }
 }
