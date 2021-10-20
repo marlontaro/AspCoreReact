@@ -77,6 +77,7 @@ namespace DemoReact.DAO
             using (IDatabase db = Connection)
             {
                 return db.SingleById<Cliente>(id);
+                
             }
         }
 
